@@ -3,7 +3,7 @@
  <configuration>
   <property>
    <name>fs.default.name</name>
-   <value>hdfs://master.local:9000</value>
+   <value>hdfs://master.local:8020</value>
    <description>The name of the default file system. A URI whose scheme and authority determine the FileSystem implementation.</description>
   </property>
  </configuration>

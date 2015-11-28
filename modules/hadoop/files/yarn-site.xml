@@ -28,7 +28,7 @@
   </property>
   <property>
       <name>yarn.web-proxy.address</name>
-      <value>master.local:8100</value>
+      <value>master.local:8088</value>
   </property>
    <property>
       <name>yarn.log-aggregation-enable</name>

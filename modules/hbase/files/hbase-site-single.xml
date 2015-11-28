@@ -12,7 +12,7 @@
   </property>
   <property>
     <name>hbase.rootdir</name>
-    <value>hdfs://master.local:9000/hbase</value>
+    <value>hdfs://master.local:8020/hbase</value>
     <description>The directory shared by RegionServers.</description>
   </property>
   <property>
