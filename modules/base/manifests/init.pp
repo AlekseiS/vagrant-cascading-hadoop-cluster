@@ -46,11 +46,4 @@ class base{
     user   => "root",
     require => File['/root/.ssh/id_rsa.pub']
     }
-
-
-  file { "/etc/motd":
-    source => "puppet:///modules/base/motd",
-    mode => 644,
-  }
-
 }
