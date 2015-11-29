@@ -8,3 +8,4 @@ hbase-*.tar.gz
 spark-*.tgz
 apache-hive-*.tar.gz
 phoenix-*.tar.gz
+apache-drill-*.tar.gz

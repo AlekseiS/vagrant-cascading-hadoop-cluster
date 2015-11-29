@@ -1,8 +1,9 @@
 include base
+include avahi
 include hadoop
 include hbase
-include hive
-#include phoenix
 include spark
-include avahi
+include hive
+include drill
+#include phoenix
 #include cascading
