@@ -159,6 +159,29 @@ VM.
 
 The webinterface of the HBase master is http://master.local:16010.
 
+## Hive
+
+This version of the cluster also contains [Apache Hive](http://hive.apache.org). The distributition is in `/opt/apache-hive-<version>`. Before using Hive run the following script once after starting Hadoop:
+
+    $ (master) sudo prepare-hive.sh
+
+
+## Drill
+
+This version of the cluster also contains [Apache Drill](http://drill.apache.org). The distributition is in `/opt/apache-drill-<version>`. Drill requires Zookeeper to be running, so if you haven't started HBase then you can start Zookeeper separately using the following command:
+
+    $ (master) sudo hbase-daemons.sh --config "$HBASE_CONF_DIR" start zookeeper
+
+Then start drill using:
+
+    $ (master) sudo start-drill.sh
+
+Stop it using:
+
+    $ (master) sudo stop-drill.sh
+
+The webinterface is available at one of the drill bits at: http://hadoop1.local:8047
+
 ## Hacking & Troubleshooting & Tips & Tricks
 
 ### Getting help
